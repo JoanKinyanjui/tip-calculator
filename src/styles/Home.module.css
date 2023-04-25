@@ -1,0 +1,112 @@
+.HomePage{
+    width: 100vw !important;
+    min-height:100vh;
+    background-color: rgb(185, 252, 252);
+}
+.LogoDiv{
+    width: 100vw;
+    height: 15vw;
+}
+.DesktopGrid{
+    width: 90%;
+display: flex;
+border-radius: 30px;
+background-color: white;
+padding-top: 4rem;
+margin: auto;
+padding-bottom: 4rem;
+}
+.MobileGrid{
+display: none;
+min-height: 20vh;
+border-radius: 20px;
+background-color: white;
+padding-top: 2rem;
+padding-bottom: 2rem;
+
+}
+.GridDiv{
+    width: 100%;
+    display: flex;
+}
+
+@media only screen and (max-width:780px){
+       .DesktopGrid{
+        display: none;
+        }
+        .MobileGrid{
+        display: grid;
+        }
+        .LogoDiv{
+            width: 100vw;
+            height: 25vw;
+        }
+        .GridDiv{
+            width: 100%;
+            display: grid;
+        }
+}
+
+
+/* Two grids DEsktop */
+.firstDesktop{
+    width: 45%;
+    background-color: transparent;
+}
+.secondDesktop{
+    width: 45%;
+    background-color: transparent;
+    background-color: rgb(2, 46, 46);
+    color: white;
+    position: relative;
+    border-radius: 30px;
+}
+.firstMobile{
+    width: 95%;
+    height: 50vh;
+    margin: auto;
+    background-color: transparent;
+}
+.secondMobile{
+    width: 95%;
+    margin: auto;
+    background-color: transparent;
+    background-color: rgb(2, 46, 46);
+    color: white;
+    height: 30vh;
+    border-radius: 20px;
+    position: relative;
+}
+
+.percentageTipsButtons{
+    background-color: rgb(2, 46, 46);
+    width: 30%;
+    height: 38px;
+    color: white;
+}
+.CustomButton{
+    background-color: rgb(221, 236, 236);
+    width: 30%;
+    /* color: white; */
+}
+.NumberOfPeople{
+    min-height: 15vh;
+}
+.THeNumberBackground{
+    background-color: rgb(221, 236, 236);
+}
+.ResetButtonDiv{
+    position: absolute;
+    bottom: 10%;
+    color: white;
+}
+.ResetButton{
+    background-color: rgb(7, 223, 212);
+    width: 70%;
+    margin: auto;
+   
+}
+.Amounts{
+    font-size: larger;
+    color: rgb(7, 223, 212);
+}

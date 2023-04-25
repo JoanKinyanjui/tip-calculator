@@ -1,6 +1,6 @@
 .HomePage{
     width: 100vw !important;
-    min-height:100vh;
+    height: 100vh;
     background-color: rgb(185, 252, 252);
 }
 .LogoDiv{
@@ -17,8 +17,8 @@ margin: auto;
 padding-bottom: 4rem;
 }
 .MobileGrid{
+    width: 100%;
 display: none;
-min-height: 20vh;
 border-radius: 20px;
 background-color: white;
 padding-top: 2rem;
@@ -31,6 +31,11 @@ padding-bottom: 2rem;
 }
 
 @media only screen and (max-width:780px){
+    .HomePage{
+        width: 100vw !important;
+        height: max-content;
+        background-color: rgb(185, 252, 252);
+    }
        .DesktopGrid{
         display: none;
         }
@@ -63,7 +68,7 @@ padding-bottom: 2rem;
 }
 .firstMobile{
     width: 95%;
-    height: 50vh;
+    min-height: 50vh;
     margin: auto;
     background-color: transparent;
 }
@@ -79,7 +84,7 @@ padding-bottom: 2rem;
 }
 
 .percentageTipsButtons{
-    background-color: rgb(2, 46, 46);
+    /* background-color: rgb(2, 46, 46); */
     width: 30%;
     height: 38px;
     color: white;
@@ -99,14 +104,20 @@ padding-bottom: 2rem;
     position: absolute;
     bottom: 10%;
     color: white;
+    width: 100%;
+    left: 0;
 }
 .ResetButton{
     background-color: rgb(7, 223, 212);
-    width: 70%;
-    margin: auto;
+    width: 278px;
+    /* margin: auto; */
    
 }
 .Amounts{
     font-size: larger;
     color: rgb(7, 223, 212);
 }
+.not-selected {
+    background-color: teal;
+  }
+  

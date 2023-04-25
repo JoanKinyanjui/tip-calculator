@@ -1,6 +1,6 @@
 .HomePage{
     width: 100vw !important;
-    height: 100vh;
+    min-height: 100vh;
     background-color: rgb(185, 252, 252);
 }
 .LogoDiv{
@@ -29,6 +29,17 @@ padding-bottom: 2rem;
     width: 100%;
     display: flex;
 }
+.percentageTipsButtons{
+    /* background-color: rgb(2, 46, 46); */
+    width: 30%;
+    height: 38px;
+    color: white;
+}
+.CustomButton{
+    background-color: rgb(221, 236, 236);
+    width: 30%;
+    /* color: white; */
+}
 
 @media only screen and (max-width:780px){
     .HomePage{
@@ -49,6 +60,17 @@ padding-bottom: 2rem;
         .GridDiv{
             width: 100%;
             display: grid;
+        }
+        .percentageTipsButtons{
+            /* background-color: rgb(2, 46, 46); */
+            width: 40%;
+            height: 38px;
+            color: white;
+        }
+        .CustomButton{
+            background-color: rgb(221, 236, 236);
+            width: 40%;
+            /* color: white; */
         }
 }
 
@@ -83,17 +105,7 @@ padding-bottom: 2rem;
     position: relative;
 }
 
-.percentageTipsButtons{
-    /* background-color: rgb(2, 46, 46); */
-    width: 30%;
-    height: 38px;
-    color: white;
-}
-.CustomButton{
-    background-color: rgb(221, 236, 236);
-    width: 30%;
-    /* color: white; */
-}
+
 .NumberOfPeople{
     min-height: 15vh;
 }
@@ -103,7 +115,8 @@ padding-bottom: 2rem;
 .ResetButtonDiv{
     position: absolute;
     bottom: 10%;
-    color: white;
+    color: black;
+    font-weight: bold;
     width: 100%;
     left: 0;
 }
